@@ -21,18 +21,16 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'database_cleaner', '~> 1.7'
+  gem 'factory_bot_rails', '~> 5.0'
+  gem 'rspec-rails', '= 4.0.0.beta2'
 end
 
 group :development do
+  gem 'graphiql-rails'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'web-console', '>= 3.3.0'
 end
 
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-
-gem 'graphiql-rails', group: :development
 gem 'graphql', '~> 1.9'
-
-gem "rspec-rails", "= 4.0.0.beta2", :groups => [:development, :test]
-
-gem "factory_bot_rails", "~> 5.0", :groups => [:development, :test]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

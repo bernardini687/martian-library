@@ -7,6 +7,7 @@ FactoryBot.define do
   factory :item do
     sequence(:title) { |n| "item-#{n}" }
     sequence(:description) { |n| "description-#{n}" }
+    sequence(:image_url) { |n| "image-#{n}" }
     user
   end
 end
